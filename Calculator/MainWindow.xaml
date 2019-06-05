@@ -23,30 +23,30 @@
             <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Button x:Name="b1" Grid.Row="2" Grid.Column="0" FontSize="35" Click="btnNum_Click" Content="1" />
-        <Button x:Name="b2" Grid.Row="2" Grid.Column="1" FontSize="35" Click="btnNum_Click" Content="2" />
-        <Button x:Name="b3" Grid.Row="2" Grid.Column="2" FontSize="35" Click="btnNum_Click" Content="3" />
-        <Button x:Name="b4" Grid.Row="3" Grid.Column="0" FontSize="35" Click="btnNum_Click" Content="4" />
-        <Button x:Name="b5" Grid.Row="3" Grid.Column="1" FontSize="35" Click="btnNum_Click" Content="5" />
-        <Button x:Name="b6" Grid.Row="3" Grid.Column="2" FontSize="35" Click="btnNum_Click" Content="6" />
-        <Button x:Name="b7" Grid.Row="4" Grid.Column="0" FontSize="35" Click="btnNum_Click" Content="7" />
-        <Button x:Name="b8" Grid.Row="4" Grid.Column="1" FontSize="35" Click="btnNum_Click" Content="8" />
-        <Button x:Name="b9" Grid.Row="4" Grid.Column="2" FontSize="35" Click="btnNum_Click" Content="9" />
-        <Button x:Name="b0" Grid.Row="5" Grid.Column="1" FontSize="35" Click="btnNum_Click" Content="0" />
+        <Button x:Name="b1" Grid.Row="2" Grid.Column="0" Click="btnNum_Click" Content="1" />
+        <Button x:Name="b2" Grid.Row="2" Grid.Column="1" Click="btnNum_Click" Content="2" />
+        <Button x:Name="b3" Grid.Row="2" Grid.Column="2" Click="btnNum_Click" Content="3" />
+        <Button x:Name="b4" Grid.Row="3" Grid.Column="0" Click="btnNum_Click" Content="4" />
+        <Button x:Name="b5" Grid.Row="3" Grid.Column="1" Click="btnNum_Click" Content="5" />
+        <Button x:Name="b6" Grid.Row="3" Grid.Column="2" Click="btnNum_Click" Content="6" />
+        <Button x:Name="b7" Grid.Row="4" Grid.Column="0" Click="btnNum_Click" Content="7" />
+        <Button x:Name="b8" Grid.Row="4" Grid.Column="1" Click="btnNum_Click" Content="8" />
+        <Button x:Name="b9" Grid.Row="4" Grid.Column="2" Click="btnNum_Click" Content="9" />
+        <Button x:Name="b0" Grid.Row="5" Grid.Column="1" Click="btnNum_Click" Content="0" />
         
-        <Button x:Name="bPlus" Grid.Row="1" Grid.Column="3" FontSize="35" Click="btnOp_Click" Content="+" />
-        <Button x:Name="bNeg" Grid.Row="2" Grid.Column="3" FontSize="35" Click="btnOp_Click" Content="-" />
-        <Button x:Name="bMult" Grid.Row="3" Grid.Column="3" FontSize="35" Click="btnOp_Click" Content="*" />
-        <Button x:Name="bDiv" Grid.Row="4" Grid.Column="3" FontSize="35" Click="btnOp_Click" Content="/" />
-        <Button x:Name="bEqu" Grid.Row="5" Grid.Column="3" FontSize="35" Click="BEqu_Click" Content="=" />
+        <Button x:Name="bPlus" Grid.Row="1" Grid.Column="3" Click="btnOp_Click" Content="+" />
+        <Button x:Name="bNeg" Grid.Row="2" Grid.Column="3" Click="btnOp_Click" Content="-" />
+        <Button x:Name="bMult" Grid.Row="3" Grid.Column="3" Click="btnOp_Click" Content="*" />
+        <Button x:Name="bDiv" Grid.Row="4" Grid.Column="3" Click="btnOp_Click" Content="/" />
+        <Button x:Name="bEqu" Grid.Row="5" Grid.Column="3" Click="BEqu_Click" Content="=" />
         
-        <Button x:Name="bCE" Grid.Row="1" Grid.Column="0" FontSize="35" Click="BCE_Click" Content="CE" />
-        <Button x:Name="bC" Grid.Row="1" Grid.Column="1" FontSize="35" Click="BC_Click" Content="C" />
+        <Button x:Name="bCE" Grid.Row="1" Grid.Column="0" Click="BCE_Click" Content="CE" />
+        <Button x:Name="bC" Grid.Row="1" Grid.Column="1" Click="BC_Click" Content="C" />
         <Grid Grid.Row="1" Grid.Column="2" Background="LightGray" />
-        <Button x:Name="bPosNeg" Grid.Row="5" Grid.Column="0" FontSize="35" Click="BPosNeg_Click" Content="+-" />
-        <Button x:Name="bDec" Grid.Row="5" Grid.Column="2" FontSize="35" Click="BDec_Click" Content="." />
+        <Button x:Name="bPosNeg" Grid.Row="5" Grid.Column="0" Click="BPosNeg_Click" Content="+-" />
+        <Button x:Name="bDec" Grid.Row="5" Grid.Column="2" Click="BDec_Click" Content="." />
 
-        <TextBox x:Name="screen" IsReadOnly="True" TextAlignment="Right" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" VerticalAlignment="Bottom" FontSize="35" Text="0" />
+        <TextBox x:Name="screen" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Style="{StaticResource AnswerTextBox}" Text="0" />
 
     </Grid>
 </Window>
